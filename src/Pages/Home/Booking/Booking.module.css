@@ -1,0 +1,67 @@
+.booking_main {
+  background-color: #304f47;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 50px;
+  align-items: center;
+  margin: 0 100px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.search {
+  background-color: #d4d4d4;
+  border-radius: 5px;
+}
+
+.search input {
+  max-width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.search button {
+  max-width: max-content;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.filter {
+  display: flex;
+  border: none;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.filter_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.filter_texts p {
+  font-size: 12px;
+  letter-spacing: 0.8%;
+  color: #bfbebeb6;
+  font-family: "Mulish";
+  margin: 0px;
+}
+
+.filter_hard {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.filter_hard h4 {
+  color: #fff;
+  font-family: "Mulish";
+  font-size: 16px;
+  text-align: left;
+  margin: 0px;
+}

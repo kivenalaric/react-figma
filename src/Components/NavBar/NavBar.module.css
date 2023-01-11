@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 50px;
+}
+
+.nav_Links{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-family: mulish;
+    flex: 1;
+}
+
+.nav_Links a{
+    text-decoration: none;
+    color: #304F47;
+    padding:  12px 0px;
+    position: relative;
+}
+
+.nav_Links a::after {
+  content: '';
+  position: absolute;
+  background-color: #304F47;
+  width: 90%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.nav_Links a:hover::after{
+    opacity: 1;
+}
+
+.navbarButton{
+    display: flex;
+    justify-content: end;
+}
