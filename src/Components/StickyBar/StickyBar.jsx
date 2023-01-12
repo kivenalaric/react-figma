@@ -3,7 +3,7 @@ import StickyBarCss from './StickyBar.module.css';
 
 export default function StickyBar() {
   return (
-    <div className={StickyBarCss.sticky}>
+    <div className={StickyBarCss.sticky__main}>
       <div className={StickyBarCss.sticky__contacts}>
         <div>
           <i className="fa fa-phone" />

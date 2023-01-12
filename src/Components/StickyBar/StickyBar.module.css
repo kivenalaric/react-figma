@@ -1,8 +1,10 @@
-.sticky {
+.sticky__main {
   background-color: #304F47;
   display: flex;
-  padding: 10px 50px;
+  padding: 0.7% 30%;
+  max-width: 100%;
   justify-content: space-between;
+  padding: 3px 150px;
 }
 
 .sticky__contacts{
@@ -16,7 +18,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  gap: 5px;
+  gap: 10px;
 }
 
 .sticky__social i {

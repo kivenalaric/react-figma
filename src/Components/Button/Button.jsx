@@ -1,9 +1,14 @@
 import React from 'react';
 import ButtonCss from './Button.module.css';
 
-export default function Button({ text }) {
+// eslint-disable-next-line react/prop-types
+export default function Button({ text, color }) {
   return (
-    <button className={ButtonCss.button} type="submit">
+    <button
+      style={{ backgroundColor: color }}
+      className={ButtonCss.button}
+      type="submit"
+    >
       {text}
     </button>
   );
