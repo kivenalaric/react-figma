@@ -1,0 +1,53 @@
+.hero2__main {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9)),
+    url('https://selectadventuresafari.com/wp-content/uploads/2021/02/lake-kivu-rwanda.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  padding: 7% 15%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora';
+}
+
+.hero2__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+
+.hero2__text h1 {
+  font-family: "Lora";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0.003em;
+  text-align: left;
+}
+
+.hero2__choose {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.hero2__choose h3 {
+  font-family: "Lora";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+
+.hero2__h3s {
+  max-width: fit-content;
+  color: #c7923e;
+}

@@ -1,0 +1,7 @@
+.gallery__btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+}

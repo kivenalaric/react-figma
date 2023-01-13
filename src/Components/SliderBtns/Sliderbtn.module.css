@@ -1,0 +1,25 @@
+.slider__btn button {
+  color: #fff;
+  background-color: transparent;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 5px solid #fff;
+}
+
+.slider__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px;
+  width: 95vw;
+  margin-top: 150px;
+}
+
+.slider__btn button:hover {
+  opacity: 0.5;
+}

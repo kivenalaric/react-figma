@@ -1,0 +1,17 @@
+.carousell__main {
+  display: column;
+  margin: -70px auto 0;
+}
+
+.carousell__sliderimg {
+  display: flex;
+  max-width: 60%;
+  margin: 0px auto;
+  align-items: center;
+  gap: 10px;
+  justify-content: center
+}
+
+.carousell__slider {
+    max-width: 300px;
+}

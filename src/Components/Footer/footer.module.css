@@ -37,6 +37,28 @@
     font-size: 39px;
   }
 
+  .inputArea {
+    gap: 10px;
+  }
+
+  .inputArea input {
+    border: none;
+    padding: 2% 3%;
+    margin-right: 2%;
+  }
+
+  .inputArea button {
+    background-color: #c7923c;
+    border: none;
+    align-items: center;
+    padding: 2% 3%;
+    color: #242424;
+  }
+
+  .inputArea button i {
+    color: #fff;
+  }
+
   .footerLinks {
     display: flex;
     flex-direction: row;

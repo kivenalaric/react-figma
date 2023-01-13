@@ -9,6 +9,8 @@ import Cards from '../../Components/Cards/Cards';
 import Footer from '../../Components/Footer/footer';
 import Testimonial from './Testimonials/Testimonial';
 import Justification from './Justification/Justification';
+import Carousell from './Caroussel/Carousell';
+import SliderBtn from '../../Components/SliderBtns/Sliderbtn';
 
 export default function Home() {
   return (
@@ -26,7 +28,8 @@ export default function Home() {
         text2="Popular Destinations"
         text3="Select Our Best Popular Destinations"
       />
-
+      <SliderBtn />
+      <Carousell />
       <Midtext text2="Why Us?" text3="Why Travel with Africa wizzy Safari" />
       <Justification />
       <Midtext

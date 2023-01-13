@@ -12,11 +12,11 @@ export default function NavBar() {
       </div>
       <div className={NavBarCss.nav_Links}>
         <Link to="/">Home</Link>
-        <Link to="about">About</Link>
-        <a href="/">Tour package</a>
-        <a href="/">Gallery</a>
+        <Link to="/about">About</Link>
+        <Link to="/packages">Tour package</Link>
+        <Link to="/gallery">Gallery</Link>
         <a href="/">Blog</a>
-        <a href="/">Contact Us</a>
+        <Link to="/contactus">Contact Us</Link>
       </div>
       <div className={NavBarCss.nav_btn}>
         <Button text="Sign Up" color="#c7923c" />

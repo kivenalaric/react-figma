@@ -1,9 +1,10 @@
-.card_main{
-  display: grid;
-  grid-template-columns: auto auto auto;
+.card_main {
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 100px;
+  margin: auto;
   gap: 20px;
 }
 
@@ -11,6 +12,7 @@
   border: #a8a6a6 1px solid;
   border-radius: 10px;
   height: fit-content;
+  margin-bottom: 10px;
 }
 
 .cardText{
@@ -43,4 +45,15 @@
 
 .cardBottom{
     padding: 0px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card_main {
+      display: flex;
+      flex-direction: column;
+      max-width: 85%;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
 }

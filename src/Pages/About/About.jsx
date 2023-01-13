@@ -21,7 +21,7 @@ export default function About() {
         <div className={AboutCss.hero2_text}>
           <h1>Get THere Mehn</h1>
           <p>Discover The Land Of A Thousand Hills</p>
-          <Link to="/">Go Tiff</Link>
+          <Link to="/packages">Go Tiff</Link>
           <button onClick={goAfter} type="button">
             Go Tiff
           </button>
