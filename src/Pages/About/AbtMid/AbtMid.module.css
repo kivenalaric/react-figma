@@ -1,0 +1,23 @@
+.abt__welcome {
+  max-width: 100%;
+  display: flex;
+  margin: 8% auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.abt__welcome h1 {
+  font-size: 700;
+  font-family: "Lora";
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.3%;
+}
+
+.abt__welcome hr {
+  color: #304f47;
+  background-color: #304f47;
+  width: 280px;
+  height: 8px;
+}

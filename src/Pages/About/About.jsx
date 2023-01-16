@@ -1,12 +1,17 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import StickyBar from '../../Components/StickyBar/StickyBar';
 import NavBar from '../../Components/NavBar/NavBar';
+import AbtHero from './AbtHero/AbtHero';
+import AbtImgs from './AbtMid/AbtImgs';
+import Footer from '../../Components/Footer/footer';
 import AboutCss from './About.modules.css';
+import AbtMidText from './AbtMid/AbtMidText';
 
 export default function About() {
   const navigate = useNavigate();
 
+  // eslint-disable-next-line no-unused-vars
   const goAfter = () => {
     setTimeout(() => {
       navigate('/');
@@ -14,19 +19,13 @@ export default function About() {
   };
 
   return (
-    <div className="main_home">
+    <div className={AboutCss.about__main}>
       <StickyBar />
-      <div>
-        <NavBar />
-        <div className={AboutCss.hero2_text}>
-          <h1>Get THere Mehn</h1>
-          <p>Discover The Land Of A Thousand Hills</p>
-          <Link to="/packages">Go Tiff</Link>
-          <button onClick={goAfter} type="button">
-            Go Tiff
-          </button>
-        </div>
-      </div>
+      <NavBar />
+      <AbtHero />
+      <AbtMidText />
+      <AbtImgs />
+      <Footer />
     </div>
   );
 }

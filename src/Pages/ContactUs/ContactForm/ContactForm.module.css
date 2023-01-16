@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.contactform__main {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactform__main .contactform__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 55%;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 3% 5%;
+  margin: 100px auto;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.contactform__form label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contactform__form input {
+  border: 0.5px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 2%;
+}
+
+.contactform__names {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+}
+
+.contactform__fname input {
+  width: 100%;
+  padding: 5% 2%;
+}
+
+.contactform__email input {
+  width: 96%;
+}
+
+.contactform__lname input {
+  width: 100%;
+  padding: 5% 2%;
+  /* height: 45px; */
+}
+
+.contactform__selectnum {
+  display: flex;
+  width: 100%;
+}
+
+.contactform__selectnum select {
+  font-size: 16px;
+  background-color: #e1e1e1;
+  border-radius: 8px 0 0 8px;
+}
+
+.contactform__selectnum input {
+  border-radius: 0px 8px 8px 0px;
+  flex: 2;
+}
+
+.contactform__msg {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: 1px solid #e1e1e1;
+  width: 100%;
+}
+
+.contactform__btn {
+  width: 10%;
+}
+
+@media screen and (max-width: 786px) {
+  .contactform__form {
+    width: 95%;
+    padding: 0px 5px;
+  }
+
+  .contactform__names {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

@@ -5,13 +5,13 @@ import Button from '../../../Components/Button/Button';
 export default function Bookings() {
   return (
     <div className={Booking.booking_main}>
-      <div className={Booking.search}>
+      <div className={Booking.booking__search}>
         <input type="text" placeholder="Search activities or Destinations" />
         <button type="submit">
           <i className="fa fa-search" />
         </button>
       </div>
-      <div className={Booking.filter}>
+      <div className={Booking.filter__sec}>
         <div className={Booking.filter_texts}>
           <p>Guest</p>
           <div className={Booking.filter_hard}>

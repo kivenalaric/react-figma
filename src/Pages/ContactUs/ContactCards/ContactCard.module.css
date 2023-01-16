@@ -1,0 +1,50 @@
+.concard__main {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.concard__cards {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: #304f47;
+  border-radius: 5%;
+  padding: 0px 4% 3%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #000 3px 2px 8px;
+}
+
+.concard__social i {
+  border-radius: 50%;
+  border: 2px solid #304f47;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.concard__cards h3 {
+  font-size: 24px;
+  font-family: 'Lora';
+  font-weight: 700;
+  letter-spacing: 0.5%;
+  color: #000;
+}
+
+.concard__social {
+  display: flex;
+  gap: 3%;
+}
+
+.concard__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.concard__addtext p {
+  margin: 0px;
+}

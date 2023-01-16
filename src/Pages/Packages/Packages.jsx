@@ -6,6 +6,7 @@ import PackagesCss from './Packages.module.css';
 import Card from '../../Components/Cards/Cards';
 import Footer from '../../Components/Footer/footer';
 import Midtext from '../../Components/Midtext/Midtext';
+import PackageBtn from './Packagebtn';
 
 export default function Packages() {
   return (
@@ -21,6 +22,7 @@ export default function Packages() {
         <Card />
         <Card />
       </div>
+      <PackageBtn />
       <Footer />
     </div>
   );

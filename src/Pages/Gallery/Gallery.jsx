@@ -4,6 +4,7 @@ import StickyBar from '../../Components/StickyBar/StickyBar';
 import NextH from '../../Components/NextH/NextH';
 import GalleryCss from './GalleryS.module.css';
 import Button from '../../Components/Button/Button';
+import GalleryImg from './GalleryImg/GalleryImg';
 import Footer from '../../Components/Footer/footer';
 
 export default function Gallery() {
@@ -15,6 +16,7 @@ export default function Gallery() {
       <div className={GalleryCss.gallery__btn}>
         <Button text="Open Instagram" color="#c7923c" />
       </div>
+      <GalleryImg />
       <Footer />
     </div>
   );

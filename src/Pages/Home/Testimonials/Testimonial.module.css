@@ -35,3 +35,10 @@
 .Testimonial__text p {
   max-width: 250px;
 }
+
+@media only screen and (max-width: 768px) {
+  .Testimonial__main {
+    display: flex;
+    flex-direction: column;
+  }
+}

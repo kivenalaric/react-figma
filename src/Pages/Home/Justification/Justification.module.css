@@ -22,3 +22,9 @@
 .Justification__info p {
   max-width: 157px;
 }
+
+@media only screen and (max-width: 768px) {
+  .Justification__main {
+    flex-direction: column;
+  }
+}
