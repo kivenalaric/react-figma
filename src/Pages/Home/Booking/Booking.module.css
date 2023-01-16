@@ -108,7 +108,7 @@
   .filter_btn button {
     max-width: fit-content;
     max-height: fit-content;
-    padding: 2px 4px;
-    font-size: 16px;
+    padding: 3px 5px;
+    font-size: 12px;
   }
 }

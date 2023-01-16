@@ -61,10 +61,10 @@
   }
 
   .card_images {
-    max-width: 150px;
+    max-width: 250px;
   }
 
   .card_images img {
-    max-width: 150px;
+    max-width: 250px;
   }
 }

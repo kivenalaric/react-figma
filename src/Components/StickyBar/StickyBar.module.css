@@ -29,8 +29,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .sticky__main {
+    padding: 2px 10px;
+  }
+
   .sticky__contacts {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
+  }
+
+  .sticky__social i {
+    padding: 4px;
   }
 }

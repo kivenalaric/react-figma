@@ -11,10 +11,11 @@ import Testimonial from './Testimonials/Testimonial';
 import Justification from './Justification/Justification';
 import Carousell from './Caroussel/Carousell';
 import SliderBtn from '../../Components/SliderBtns/Sliderbtn';
+import HrLines from './HrLines';
 
 export default function Home() {
   return (
-    <div className="main_home">
+    <div className={HomeCss.main_home}>
       <StickyBar />
       <NavBar />
       <Hero />
@@ -37,11 +38,7 @@ export default function Home() {
         text3="What Our Clients Say About Us"
       />
       <Testimonial />
-      <div className={HomeCss.hr__lines}>
-        <hr className={HomeCss.color1__line} />
-        <hr className={HomeCss.color2__line} />
-        <hr className={HomeCss.color2__line} />
-      </div>
+      <HrLines />
       <Footer />
     </div>
   );

@@ -48,3 +48,16 @@
 .concard__addtext p {
   margin: 0px;
 }
+
+@media only screen and (max-width: 768px) {
+  .concard__main {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 5px;
+  }
+
+  .concard__cards {
+    width: 280px;
+  }
+}

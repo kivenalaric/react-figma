@@ -86,14 +86,30 @@ textarea {
   width: 10%;
 }
 
-@media screen and (max-width: 786px) {
+@media only screen and (max-width: 786px) {
+  .contactform__main {
+    width: 100%;
+  }
+
   .contactform__form {
-    width: 95%;
+    width: 100%;
     padding: 0px 5px;
   }
 
   .contactform__names {
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .contactform__btn {
+    width: 3%;
+  }
+
+  .contactform__selectnum {
+    max-width: 200px;
+  }
+
+  .contactform__selectnum input {
+    max-width: 200px
   }
 }

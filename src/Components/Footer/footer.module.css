@@ -1,100 +1,156 @@
-.footerContainer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #304f47;
-    padding: 25px 10px;
-    gap: 50px;
-    margin: 160px 0 0 0;
-    color: #fff;
-  }
-  
-  .footerContent {
-    width: 396px;
-    word-wrap: normal;
-    text-align: left;
-  }
+.footer__main {
+  background: #304F47;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin-bottom: 0;
+}
 
-  .IconsLogo {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .containerLeft .containerRight {
-    display: flex;
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__lefttext {
+  text-align: left;
+}
+
+.footer__lefttext h3 {
+  font-family: "Lora";
+  font-weight: 700px;
+  font-size: 39px;
+  letter-spacing: 0.5%;
+  max-width: 467px;
+}
+
+.footer__leftp {
+  display: flex;
+  max-width: 396px;
+  flex-direction: column;
+  /* gap: 2%; */
+}
+
+.footer__leftp1 p {
+  font-family: "Mulish";
+  font-weight: 400;
+  margin: 0 auto 2%;
+  font-size: 20px;
+  letter-spacing: 0.5%;
+}
+
+.footer__leftp2 {
+  margin-bottom: 2%;
+}
+
+.footer__leftp2 p {
+  font-family: "Mulish";
+  font-weight: 400;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 0.5%;
+}
+
+.input__section {
+  display: flex;
+  gap: 0.9%;
+  padding: 1% 0 0 0;
+  width: 100%;
+}
+
+.form__lable {
+  font-family: "Mulish";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5%;
+}
+
+.footer__input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 100%;
+  border: none;
+}
+
+.footer__sendbtn {
+  background-color: #c7923e;
+  padding: 1.5%;
+  color: #fff;
+  border: none;
+}
+
+.footer__righttop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__sociallinks {
+  display: flex;
+  gap: 3px;
+}
+
+.footer__sociallinks i {
+  border: #fff 2px solid;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.footer__rightlinks {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.footer__bottomtxt {
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__content {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .containerLeft {
-    text-align: left;
-  }
-  
-  .containerLeft h2 {
-    width: 468px;
-    word-wrap: normal;
-    text-align: left;
-    font-size: 39px;
-  }
-
-  .inputArea {
-    gap: 10px;
-  }
-
-  .inputArea input {
-    border: none;
-    padding: 2% 3%;
-    margin-right: 2%;
-  }
-
-  .inputArea button {
-    background-color: #c7923c;
-    border: none;
-    align-items: center;
-    padding: 2% 3%;
-    color: #242424;
-  }
-
-  .inputArea button i {
-    color: #fff;
-  }
-
-  .footerLinks {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    gap: 30px;
-    margin-left: -40px;
-    margin-top: 30px;
-    text-align: left;
-  }
-  
-  ul {
-    list-style: none;
+    gap: 3%;
     width: 100%;
+    padding: 0 10px;
   }
-  
-  li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10px;
+
+  .footer__leftp {
+    max-width: 80%;
   }
-  
-  .IconsLogo {
-    display: flex;
+
+  .footer__right {
+    margin: 2% auto 2%;
+  }
+
+  .footer__righttop {
+    max-width: 80%;
     align-items: center;
-    width: 50%;
-    justify-content: space-between;
+    margin: auto;
   }
-  
-  .footerLogo img {
-    width: 85px;
-    height: 85px;
+
+  .footer__righttop img {
+    height: 70px;
+    width: 70px;
   }
-  
-  .sometext {
-    font-size: 16px;
-    width: 500%;
+
+  .footer__rightlinks {
+   align-items: center;
+   margin-left: -10%;
+   margin-right: auto;
   }
-  
+
+}

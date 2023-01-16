@@ -6,159 +6,82 @@ import logo from '../../assets/images/logo.svg';
 
 function Footer() {
   return (
-    <div className={FooterCss.footerContainer}>
-      <div className={FooterCss.containerLeft}>
-        <h2>If you have any question, Let us help you!</h2>
-        <div className={FooterCss.footerContent}>
-          <p>
-            If you have any questions or would like to book a tour with us,
-            please dont hesitate to contact us.
-          </p>
-          <p>Phone: +250 788 123 456</p>
-          <p>Email: info@rwandatourism.com </p>
-          <p>Address: Kigali, Rwanda</p>
+    <div className={FooterCss.footer__main}>
+      <div className={FooterCss.footer__content}>
+        <div className={FooterCss.footer__left}>
+          <div className={FooterCss.footer__lefttext}>
+            <h3>If you have any question, Let us help you!</h3>
+            <div className={FooterCss.footer__leftp}>
+              <div className={FooterCss.footer__leftp1}>
+                <p>
+                  If you have any questions or would like to book a tour with
+                  us, please dont hesitate to contact us.
+                </p>
+              </div>
+              <div className={FooterCss.footer__leftp2}>
+                <p>Phone: +250 788 123 456</p>
+                <p>Email: info@rwandatourism.com </p>
+                <p>Address: Kigali, Rwanda</p>
+              </div>
+              <form>
+                <p className={FooterCss.form__lable}>
+                  Subscribe to our newspaper
+                </p>
+                <div className={FooterCss.input__section}>
+                  <input
+                    className={FooterCss.footer__input}
+                    type="text"
+                    placeholder="Input your email here"
+                  />
+                  <button className={FooterCss.footer__sendbtn} type="button">
+                    <i className="fa fa-paper-plane" aria-hidden="true" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <p>Subscribe to our newspaper</p>
-        <div className={FooterCss.inputArea}>
-          <input type="text" placeholder="Input your feild here" />
-          <button>
-            <i className="fa fa-paper-plane" aria-hidden="true" />
-          </button>
+        <div className={FooterCss.footer__right}>
+          <div className={FooterCss.footer__righttop}>
+            <div className={FooterCss.footer__rightlogo}>
+              <img src={logo} alt="logo" />
+            </div>
+            <div className={FooterCss.footer__sociallinks}>
+              <i className="fa fa-facebook" />
+              <i className="fa fa-twitter" />
+              <i className="fa fa-linkedin" />
+              <i className="fa fa-instagram" />
+            </div>
+          </div>
+          <div className={FooterCss.footer__righttext}>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div className={FooterCss.footer__rightlinks}>
+            <ul>
+              <li>Home</li>
+              <li>Testimonials</li>
+              <li>Destinations</li>
+              <li>Sign In</li>
+            </ul>
+            <ul>
+              <li>About Us</li>
+              <li>Packages</li>
+              <li>Events</li>
+              <li>Gallery</li>
+            </ul>
+            <ul>
+              <li>Our Team</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className={FooterCss.containerRight}>
-        <div className={FooterCss.IconsLogo}>
-          <div className={FooterCss.footerLogo}>
-            <img src={logo} alt="logo" />
-          </div>
-          <div className={FooterCss.footericons}>
-            <svg
-              width="24"
-              height="26"
-              viewBox="0 0 24 26"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="0.5"
-                y="1.17188"
-                width="23"
-                height="24.2404"
-                rx="11.5"
-                stroke="white"
-              />
-              <path
-                d="M12.5393 18.8134V13.7763H14.147L14.3877 11.8132H12.5393V10.5599C12.5393 9.99156 12.6894 9.60421 13.4644 9.60421L14.4528 9.60373V7.84802C14.2818 7.82418 13.6951 7.77075 13.0125 7.77075C11.5875 7.77075 10.6118 8.68554 10.6118 10.3656V11.8133H9V13.7763H10.6118V18.8134L12.5393 18.8134Z"
-                fill="white"
-              />
-            </svg>
-            <svg
-              width="24"
-              height="26"
-              viewBox="0 0 24 26"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="0.5"
-                y="1.17188"
-                width="23"
-                height="24.2404"
-                rx="11.5"
-                stroke="white"
-              />
-              <path
-                d="M16.3604 10.922C16.3604 11.0287 16.3604 11.1354 16.3604 11.2268C16.3604 14.3819 14.1501 18.0247 10.1213 18.0247C8.87631 18.0247 7.72922 17.6284 6.75 16.9577C6.91787 16.973 7.09972 16.9882 7.26759 16.9882C8.28878 16.9882 9.24002 16.6072 9.99542 15.967C9.03019 15.9518 8.21883 15.2506 7.95304 14.3057C8.09293 14.3361 8.21883 14.3514 8.37271 14.3514C8.56855 14.3514 8.7644 14.3209 8.94625 14.2599C7.93905 14.0465 7.18366 13.0863 7.18366 11.9279C7.18366 11.9127 7.18366 11.9127 7.18366 11.8975C7.47742 12.0804 7.81315 12.1871 8.17687 12.2023C7.58933 11.7755 7.19764 11.0439 7.19764 10.2056C7.19764 9.76361 7.30955 9.35208 7.49141 9.00152C8.56855 10.4495 10.1913 11.3945 12.0098 11.5012C11.9678 11.3335 11.9539 11.1354 11.9539 10.9525C11.9539 9.62643 12.9331 8.55951 14.1501 8.55951C14.7796 8.55951 15.3532 8.8491 15.7448 9.30636C16.2484 9.19966 16.7101 9.00152 17.1437 8.72717C16.9759 9.29111 16.6261 9.74837 16.1785 10.0532C16.6261 9.99224 17.0458 9.8703 17.4375 9.67216C17.1577 10.1599 16.794 10.5867 16.3604 10.922Z"
-                fill="white"
-              />
-            </svg>
-            <svg
-              width="24"
-              height="26"
-              viewBox="0 0 24 26"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="0.5"
-                y="1.17188"
-                width="23"
-                height="24.2404"
-                rx="11.5"
-                stroke="white"
-              />
-              <path
-                d="M16.7619 18.0211C16.1868 18.0067 15.6254 18.0067 15.0503 18.0211C14.9271 18.0211 14.8997 17.9923 14.8997 17.8627C14.8997 16.797 14.8997 15.717 14.8997 14.6514C14.8997 14.4066 14.886 14.1617 14.8175 13.9313C14.6121 13.1825 13.7906 12.9089 13.2018 13.4129C12.8868 13.6721 12.7636 14.0321 12.7636 14.4642C12.7636 15.4722 12.7636 16.4802 12.7636 17.4883C12.7636 17.6179 12.7499 17.7475 12.7636 17.8915C12.7773 18.0067 12.7225 18.0355 12.6267 18.0211C12.0379 18.0211 11.4628 18.0211 10.874 18.0211C10.7644 18.0211 10.7371 17.9923 10.7371 17.8771C10.7508 16.9698 10.7508 16.0626 10.7508 15.141C10.7508 14.0177 10.7508 12.8945 10.7371 11.7857C10.7371 11.6561 10.7644 11.6273 10.874 11.6273C11.4628 11.6273 12.0379 11.6273 12.6267 11.6273C12.7362 11.6273 12.7636 11.6561 12.7636 11.7713C12.7636 12.0017 12.7636 12.2321 12.7636 12.5057C12.8047 12.4625 12.8184 12.4481 12.8321 12.4337C13.3661 11.6129 14.1192 11.3824 15.0092 11.5264C16.0362 11.6993 16.6935 12.4481 16.8578 13.6001C16.8989 13.8737 16.9125 14.1473 16.9125 14.421C16.9125 15.573 16.9125 16.7106 16.9125 17.8627C16.9125 17.9779 16.8852 18.0211 16.7619 18.0211Z"
-                fill="white"
-              />
-              <path
-                d="M9.64127 14.8244C9.64127 15.8325 9.64127 16.8405 9.64127 17.8485C9.64127 17.9782 9.61389 18.0214 9.49065 18.0214C8.91555 18.007 8.34045 18.0214 7.76535 18.0214C7.6558 18.0214 7.62842 17.9926 7.62842 17.8773C7.62842 15.8469 7.62842 13.802 7.62842 11.7715C7.62842 11.6707 7.6558 11.6275 7.76535 11.6275C8.35414 11.6275 8.94293 11.6275 9.53173 11.6275C9.65496 11.6275 9.66866 11.6707 9.66866 11.7859C9.64127 12.7939 9.64127 13.802 9.64127 14.8244Z"
-                fill="white"
-              />
-              <path
-                d="M9.73848 9.95694C9.60155 10.533 9.04014 10.8642 8.39658 10.749C7.71193 10.6338 7.32853 9.92813 7.57501 9.23691C7.73932 8.80489 8.13641 8.54568 8.64305 8.56008C9.40985 8.54568 9.91649 9.19371 9.73848 9.95694Z"
-                fill="white"
-              />
-            </svg>
-            <svg
-              width="24"
-              height="26"
-              viewBox="0 0 24 26"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="0.5"
-                y="1.17188"
-                width="23"
-                height="24.2404"
-                rx="11.5"
-                stroke="white"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M6.75 9.77075C6.75 8.66618 7.64543 7.77075 8.75 7.77075H15.25C16.3546 7.77075 17.25 8.66618 17.25 9.77075V16.8134C17.25 17.918 16.3546 18.8134 15.25 18.8134H8.75C7.64543 18.8134 6.75 17.918 6.75 16.8134V9.77075ZM12 11.3155C11.0065 11.3155 10.15 12.1716 10.15 13.2921C10.15 14.4126 11.0065 15.2687 12 15.2687C12.9936 15.2687 13.85 14.4126 13.85 13.2921C13.85 12.1716 12.9936 11.3155 12 11.3155ZM8.95005 13.2921C8.95005 11.5665 10.2874 10.1155 12 10.1155C13.7126 10.1155 15.05 11.5665 15.05 13.2921C15.05 15.0176 13.7126 16.4687 12 16.4687C10.2874 16.4687 8.95005 15.0176 8.95005 13.2921ZM15.15 10.7155C15.5366 10.7155 15.85 10.3859 15.85 9.97929C15.85 9.57271 15.5366 9.24311 15.15 9.24311C14.7634 9.24311 14.45 9.57271 14.45 9.97929C14.45 10.3859 14.7634 10.7155 15.15 10.7155Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-        </div>
-        <p className={FooterCss.sometxt}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <div className={FooterCss.footerLinks}>
-          <div>
-            <ul>
-              <li>
-                <span>Home</span>
-                <span>Testimonials</span>
-                <span>Destinations</span>
-                <span>signin</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <span>About Us</span>
-                <span>Packages</span>
-                <span>Events</span>
-                <span>Gallery</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <span>Our Team</span>
-                <span>Blog</span>
-                <span>Contact Us</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div className={FooterCss.footer__bottomtxt}>
+        <p>Copyright Africa Wizzy Safari 2022</p>
       </div>
     </div>
   );
