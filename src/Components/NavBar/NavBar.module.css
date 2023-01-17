@@ -1,19 +1,27 @@
 .navbar__main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   max-width: 100%;
   gap: 2%;
-  padding: 0.2% 5%;
+  padding: 0.2% 6%;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .nav_Links {
   display: flex;
-  gap: 4%;
+  gap: 15px;
   font-size: 20px;
   font-family: "mulish";
-  flex: 1;
 }
 
 .nav_Links a {
@@ -25,7 +33,7 @@
   content: '';
   position: absolute;
   background-color: #304f47;
-  width: 90%;
+  max-width: 90%;
   height: 5px;
   bottom: 0;
   left: 0;
@@ -42,5 +50,22 @@
     gap: 1%;
     font-size: 16px;
     flex-wrap: wrap;
+  }
+
+  .navbar__right {
+    gap: 10px;
+  }
+
+  .nav_btn button {
+    max-width: fit-content;
+    font-size: 12px;
+    padding: 2px 10px;
+    text-align: left;
+    max-height: fit-content;
+  }
+
+  .navbar__main {
+    padding: 0.2% 3%;
+    margin: auto;
   }
 }

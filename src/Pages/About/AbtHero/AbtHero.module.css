@@ -37,8 +37,7 @@
   height: 90vh;
   flex: 1;
   align-content: flex-end;
-  /* transform: translateY(-16%); */
-  z-index: 1;
+  transform: translateY(-16%);
 }
 
 .abthero__empty {

@@ -21,7 +21,9 @@ export default function About() {
   return (
     <div className={AboutCss.about__main}>
       <StickyBar />
-      <NavBar />
+      <div className={AboutCss.about__nav}>
+        <NavBar />
+      </div>
       <AbtHero />
       <AbtMidText />
       <AbtImgs />
