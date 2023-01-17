@@ -8,6 +8,7 @@
   -moz-column-width: 33%;
   padding: 0 12px;
   max-height: 1518px;
+  margin-bottom: 8%;
 }
 
 .gpics__image {
@@ -31,5 +32,6 @@
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+    margin-bottom: 2%;
   }
 }

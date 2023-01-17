@@ -29,7 +29,7 @@ const gallery = [
   },
   {
     image:
-      'https://images.pexels.com/photos/1046601/pexels-photo-1046601.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/885013/pexels-photo-885013.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     image:
@@ -58,7 +58,7 @@ const gallery = [
   },
   {
     image:
-      'https://images.pexels.com/photos/40803/lion-animal-predator-big-cat-40803.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/16066/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     image:
@@ -66,11 +66,11 @@ const gallery = [
   },
   {
     image:
-      'https://images.pexels.com/photos/3207532/pexels-photo-3207532.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/672706/pexels-photo-672706.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     image:
-      'https://images.pexels.com/photos/631292/pexels-photo-631292.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/920040/pexels-photo-920040.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     image:
@@ -78,7 +78,7 @@ const gallery = [
   },
   {
     image:
-      'https://images.pexels.com/photos/1046601/pexels-photo-1046601.jpeg?auto=compress&cs=tinysrgb&w=1600',
+      'https://images.pexels.com/photos/3177662/pexels-photo-3177662.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 ];
 
