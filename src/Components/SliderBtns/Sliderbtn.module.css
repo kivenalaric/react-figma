@@ -1,0 +1,40 @@
+.slider__btn {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  padding: 0.2% 20% 0;
+  margin-bottom: 1%;
+}
+
+.slider__btn button {
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+.slider__btn1 {
+  color: #C7923E;
+  background-color: #fff;
+  border: 1px solid #C7923E;
+}
+
+.slider__btn2 {
+  color: #fff;
+  background-color: #C7923E;
+  border: 1px solid #C7923E;
+}
+
+.slider__btn button:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider__btn {
+    display: none;
+  }
+}
