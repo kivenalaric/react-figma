@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import MidtextCss from './Midtext.module.css';
 
-// eslint-disable-next-line react/prop-types
 export default function Midtext({ text2, text3 }) {
   return (
     <div className={MidtextCss.midtext_main}>

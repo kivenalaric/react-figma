@@ -88,17 +88,20 @@ textarea {
 
 @media only screen and (max-width: 786px) {
   .contactform__main {
-    width: 100%;
+    width: 100vw;
+    margin: auto;
   }
 
   .contactform__form {
-    width: 100%;
+    width: fit-content;
+    max-width: 90%;
+    margin: auto;
     padding: 0px 5px;
   }
 
   .contactform__names {
-    flex-wrap: wrap;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .contactform__btn {
@@ -106,10 +109,14 @@ textarea {
   }
 
   .contactform__selectnum {
-    max-width: 200px;
+    width: 100%;
+  }
+
+  .contactform__selectnum select {
+    width: 10%;
   }
 
   .contactform__selectnum input {
-    max-width: 200px
+    width: 90%;
   }
 }

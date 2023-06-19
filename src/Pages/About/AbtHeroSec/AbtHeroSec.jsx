@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../../../Components/Button/Button';
 import AbtHeroCss from './AbtHero.module.css';
 
-export default function HeroSection() {
+export default function AbtHeroSec() {
   return (
     <div className={AbtHeroCss.abthero__main}>
       <div className={AbtHeroCss.abthero__left}>

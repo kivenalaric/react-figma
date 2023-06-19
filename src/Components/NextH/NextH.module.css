@@ -22,7 +22,7 @@
 }
 
 .hero2__text h1 {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-size: 64px;
   font-weight: 700;
   line-height: 77px;
@@ -39,7 +39,7 @@
 }
 
 .hero2__choose h3 {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
@@ -50,4 +50,36 @@
 .hero2__h3s {
   max-width: fit-content;
   color: #c7923e;
+}
+
+@media only screen and (max-width: 760px) {
+  .hero2__main {
+    width: 100vw;
+    padding: 3% 10%;
+  }
+
+  .hero2__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .hero2__text h1 {
+    font-size: 45px;
+  }
+
+  .hero2__choose {
+    width: 70%;
+    margin: auto;
+  }
+
+  .hero2__h3f {
+    font-size: 25px;
+  }
+
+  .hero2__h3s {
+    font-size: 25px;
+  }
 }

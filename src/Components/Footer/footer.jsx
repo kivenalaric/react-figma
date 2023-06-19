@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable react/button-has-type */
 import React from 'react';
 import FooterCss from './footer.module.css';
 import logo from '../../assets/images/logo.svg';
