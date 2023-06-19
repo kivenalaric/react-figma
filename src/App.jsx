@@ -6,7 +6,7 @@ import Packages from './Pages/Packages/Packages';
 import Gallery from './Pages/Gallery/Gallery';
 import Contact from './Pages/ContactUs/ContactUs';
 import { ThemeProvider, themeObject } from './contexts/theme.context';
-import About from './Pages/about/about';
+import About from './Pages/About/About';
 
 function App() {
   const [theme, setTheme] = useState('light');
