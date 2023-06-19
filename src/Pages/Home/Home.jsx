@@ -1,12 +1,12 @@
 import React from 'react';
 import HomeCss from './Home.module.css';
-import StickyBar from '../../Components/StickyBar/StickyBar';
-import NavBar from '../../Components/NavBar/NavBar';
+// import StickyBar from '../../Components/StickyBar/StickyBar';
+// import NavBar from '../../Components/NavBar/NavBar';
 import Hero from './Hero/Hero';
 import Bookings from './Booking/Booking';
 import Midtext from '../../Components/Midtext/Midtext';
 import Cards from '../../Components/Cards/Cards';
-import Footer from '../../Components/Footer/footer';
+// import Footer from '../../Components/Footer/footer';
 import Testimonial from './Testimonials/Testimonial';
 import Justification from './Justification/Justification';
 import Carousell from './Caroussel/Carousell';
@@ -16,8 +16,8 @@ import HrLines from './HrLines';
 export default function Home() {
   return (
     <div className={HomeCss.main_home}>
-      <StickyBar />
-      <NavBar />
+      {/* <StickyBar />
+      <NavBar /> */}
       <Hero />
       <Bookings />
       <Midtext
@@ -39,7 +39,7 @@ export default function Home() {
       />
       <Testimonial />
       <HrLines />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

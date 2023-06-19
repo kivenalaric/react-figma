@@ -7,6 +7,9 @@ import Gallery from './Pages/Gallery/Gallery';
 import Contact from './Pages/ContactUs/ContactUs';
 import { ThemeProvider, themeObject } from './contexts/theme.context';
 import About from './Pages/About/About';
+import StickyBar from './Components/StickyBar/StickyBar';
+import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/footer';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -18,6 +21,8 @@ function App() {
         style={{ color: themeColor.color, background: themeColor.background }}
       >
         <BrowserRouter>
+          <StickyBar />
+          <NavBar />
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -25,6 +30,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contactus" element={<Contact />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </ThemeProvider>

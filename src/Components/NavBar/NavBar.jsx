@@ -20,7 +20,6 @@ export default function NavBar() {
           <Link to="/contactus">Contact Us</Link>
         </div>
       </div>
-      <i className="fa fa-search" />
       <div className={NavBarCss.nav_btn}>
         <Button text="Sign Up" color="#c7923c" />
       </div>
