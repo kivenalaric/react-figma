@@ -1,11 +1,12 @@
+/* eslint-disable import/no-unresolved */
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
 import Packages from './Pages/Packages/Packages';
 import Gallery from './Pages/Gallery/Gallery';
 import Contact from './Pages/ContactUs/ContactUs';
 import { ThemeProvider, themeObject } from './contexts/theme.context';
+import About from './Pages/about/about';
 
 function App() {
   const [theme, setTheme] = useState('light');
