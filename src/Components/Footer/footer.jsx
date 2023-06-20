@@ -1,6 +1,12 @@
 import React from 'react';
 import FooterCss from './footer.module.css';
 import logo from '../../assets/images/logo.svg';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from '../Icons';
 
 function Footer() {
   return (
@@ -45,10 +51,10 @@ function Footer() {
               <img src={logo} alt="logo" />
             </div>
             <div className={FooterCss.footer__sociallinks}>
-              <i className="fa fa-facebook" />
-              <i className="fa fa-twitter" />
-              <i className="fa fa-linkedin" />
-              <i className="fa fa-instagram" />
+              <FacebookIcon />
+              <TwitterIcon />
+              <LinkedInIcon />
+              <InstagramIcon />
             </div>
           </div>
           <div className={FooterCss.footer__righttext}>

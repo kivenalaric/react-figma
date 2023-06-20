@@ -1,7 +1,11 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
 import StickyBarCss from './StickyBar.module.css';
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from '../Icons';
 
 export default function StickyBar() {
   return (
@@ -20,14 +24,10 @@ export default function StickyBar() {
       </div>
 
       <div className={StickyBarCss.sticky__social}>
-        <FaFacebookF className={StickyBarCss.social_icons} />
-        <FaTwitter className={StickyBarCss.social_icons} />
-        <FaLinkedinIn className={StickyBarCss.social_icons} />
-        <AiFillInstagram className={StickyBarCss.social_icons} />
-        {/* <i className="fa fa-facebook" />
-        <i className="fa fa-twitter" />
-        <i className="fa fa-linkedin" />
-        <i className="fa fa-instagram" /> */}
+        <FacebookIcon />
+        <TwitterIcon />
+        <LinkedInIcon />
+        <InstagramIcon />
       </div>
     </div>
   );
