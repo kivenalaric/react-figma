@@ -1,10 +1,14 @@
 .abthero__main {
   display: flex;
-  z-index: 1;
+  width: 100vw;
+  margin-bottom: 3rem;
 }
 
 .abthero__left {
-  padding: 0px 70px;
+  padding: 0px 7rem;
+  width: 60%;
+  max-width: 900px;
+  overflow-x: hidden;
 }
 
 .abthero__left h1 {
@@ -18,16 +22,26 @@
   margin-bottom: 100px;
 }
 
-.abthero__dropdown {
+.abt__booking {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  z-index: 1;
+  max-width: 850px;
+  padding: 10px;
   background-color: #fff;
   position: absolute;
-  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.abthero__dropdown {
+  display: flex;
+  gap: 3rem;
   align-items: center;
   margin: auto;
-  border-radius: 10px;
-  z-index: 1;
+  width: 80%;
+  max-width: 800px;
 }
 
 .abt__select {
@@ -52,9 +66,14 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
+  max-width: 600px;
+  max-height: 750px;
+  width: 40%;
   flex: 1;
   align-content: flex-end;
   transform: translateY(-16%);
+  position: absolute;
+  right: 0;
 }
 
 .abthero__btn {
@@ -63,21 +82,27 @@ select {
 
 @media only screen and (max-width: 768px) {
   .abthero__main {
-    background-image: url('../../../assets/images/aboutusImg.png');
+    background-image: linear-gradient(
+        to bottom,
+        #0f201cb3,
+        #0f201cb3,
+        #0f201cb3
+      ),
+      url('../../../assets/images/aboutusImg.png');
     background-size: cover;
   }
 
   .abthero__left {
-    justify-content: center;
     width: 100%;
     color: #fff;
+    text-align: center;
     justify-content: center;
   }
 
   .abthero__left h1 {
     max-width: 90%;
-    font-size: 38px;
-    text-align: left;
+    font-size: 2rem;
+    text-align: center;
     margin-top: 60%;
   }
 
@@ -100,5 +125,9 @@ select {
     max-width: fit-content;
     max-height: fit-content;
     padding: 2px 5px;
+  }
+
+  .abthero__right {
+    display: none;
   }
 }

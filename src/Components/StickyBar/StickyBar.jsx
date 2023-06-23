@@ -6,6 +6,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '../Icons';
+import MobileM from '../MobileMenu/MobileM';
 
 export default function StickyBar() {
   return (
@@ -29,6 +30,7 @@ export default function StickyBar() {
         <LinkedInIcon />
         <InstagramIcon />
       </div>
+      <MobileM />
     </div>
   );
 }

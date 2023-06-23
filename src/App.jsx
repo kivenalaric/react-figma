@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable import/no-unresolved */
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
@@ -5,20 +6,24 @@ import Home from './Pages/Home/Home';
 import Packages from './Pages/Packages/Packages';
 import Gallery from './Pages/Gallery/Gallery';
 import Contact from './Pages/ContactUs/ContactUs';
-import { ThemeProvider, themeObject } from './contexts/theme.context';
+import MyContext from './contexts/contexts';
 import About from './Pages/About/About';
 import StickyBar from './Components/StickyBar/StickyBar';
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer/footer';
 
 function App() {
-  const [theme, setTheme] = useState('light');
-  const themeColor = themeObject[theme];
+  // const [theme, setTheme] = useState('light');
+  // const themeColor = themeObject[theme];
+  const [openMenu, setOpenMenu] = useState(false);
+  const toogleMenu = () => {
+    setOpenMenu((prev) => !prev);
+  };
   return (
-    <ThemeProvider value={[themeObject[theme], setTheme]}>
+    <MyContext.Provider value={{ openMenu, toogleMenu }}>
       <div
         className="App"
-        style={{ color: themeColor.color, background: themeColor.background }}
+        // style={{ color: themeColor.color, background: themeColor.background }}
       >
         <BrowserRouter>
           <StickyBar />
@@ -33,7 +38,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </div>
-    </ThemeProvider>
+    </MyContext.Provider>
   );
 }
 

@@ -35,9 +35,8 @@ export default function AbtHeroSec() {
                 <option htmlFor>Akagera Tour</option>
               </select>
             </div>
-            <div className={AbtHeroCss.abthero__btn} />
-            <Button text="Book Now" color="#c7923c" />
           </div>
+          <Button text="Book Now" color="#c7923c" />
         </div>
       </div>
       <div className={AbtHeroCss.abthero__right} />

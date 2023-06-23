@@ -1,7 +1,13 @@
-.button{
+.button {
   padding: 15px 30px;
-  background-color: #C7923E;
+  background-color: #c7923e;
   border: 1px;
   border-radius: 10px;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    padding: 5px 12px;
+  }
 }

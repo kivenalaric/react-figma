@@ -48,16 +48,22 @@
 @media only screen and (max-width: 768px) {
   .navbar__main {
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbarLogo {
+    justify-self: center;
+    margin: auto;
   }
 
   .navbarLogo img {
     width: 50px;
+    justify-content: center;
   }
 
   .nav_Links {
-    /* gap: 1%;
-    font-size: 16px;
-    flex-wrap: wrap; */
     display: none;
   }
 
@@ -66,16 +72,6 @@
   }
 
   .nav_btn button {
-    /* max-width: fit-content;
-    font-size: 12px;
-    padding: 2px 10px;
-    text-align: left;
-    max-height: fit-content; */
     display: none;
   }
-
-  /* .navbar__main {
-    padding: 0.2% 3%;
-    margin: auto;
-  } */
 }
