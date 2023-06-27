@@ -1,8 +1,11 @@
 .main_home {
   margin: 0px;
   padding: 0px;
-  margin: auto;
   position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0;
+  overflow: hidden;
 }
 
 .hr__lines {

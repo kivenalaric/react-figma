@@ -11,13 +11,23 @@
 .contactform__main .contactform__form {
   display: flex;
   flex-direction: column;
+  width: 96vw;
+  max-width: 850px;
   gap: 20px;
   box-sizing: border-box;
-  width: 55%;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  padding: 3% 5%;
-  margin: 100px auto;
+  padding: 3rem 4rem;
+  margin: 6rem auto;
+}
+
+.contactform__mgs,
+.contactform__nums,
+.contactform__email,
+.contactform__names {
+  width: 90vw;
+  max-width: 730px;
+  margin: auto;
 }
 
 h3 {
@@ -29,31 +39,29 @@ h3 {
   font-weight: 700;
 }
 
-.contactform__form input {
+.contactform__form input,
+.contactform__form textarea {
   border: 0.5px solid #e1e1e1;
   border-radius: 8px;
-  padding: 2%;
+  padding: 0.8rem 1rem;
+  width: 100%;
 }
 
 .contactform__names {
   display: flex;
-  gap: 5%;
-  width: 100%;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
-.contactform__fname input {
-  width: 100%;
-  padding: 5% 2%;
+.contactform__fname input,
+.contactform__lname input {
+  width: 90vw;
+  max-width: 355px;
+  padding: 0.8rem 1rem;
 }
 
 .contactform__email input {
-  width: 96%;
-}
-
-.contactform__lname input {
   width: 100%;
-  padding: 5% 2%;
-  /* height: 45px; */
 }
 
 .contactform__selectnum {
@@ -82,41 +90,29 @@ textarea {
   width: 100%;
 }
 
-.contactform__btn {
-  width: 10%;
-}
-
 @media only screen and (max-width: 786px) {
   .contactform__main {
     width: 100vw;
     margin: auto;
   }
 
-  .contactform__form {
+  .contactform__main .contactform__form {
     width: fit-content;
-    max-width: 90%;
     margin: auto;
-    padding: 0px 5px;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 96vw;
   }
 
   .contactform__names {
-    display: flex;
     flex-direction: column;
+    width: 97vw;
+    align-items: center;
+    margin: auto;
+    justify-self: center;
   }
 
   .contactform__btn {
-    width: 3%;
-  }
-
-  .contactform__selectnum {
-    width: 100%;
-  }
-
-  .contactform__selectnum select {
-    width: 10%;
-  }
-
-  .contactform__selectnum input {
-    width: 90%;
+    width: 90vw;
   }
 }

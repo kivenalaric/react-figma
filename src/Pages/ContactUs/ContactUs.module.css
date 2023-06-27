@@ -2,4 +2,8 @@
   width: 100vw;
   max-width: fit-content;
   position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0;
+  overflow: hidden;
 }

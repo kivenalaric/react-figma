@@ -1,6 +1,8 @@
 .carousell__main {
   display: flex;
-  margin:  auto;
+  margin: auto;
+  width: 96vw;
+  max-width: 1200px;
 }
 
 .carousell__sliderimg {

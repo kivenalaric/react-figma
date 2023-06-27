@@ -1,7 +1,8 @@
 .abt__welcome {
-  max-width: 100%;
+  width: 96vw;
+  max-width: 1024px;
   display: flex;
-  margin: 8% auto;
+  margin: 10rem auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -9,7 +10,7 @@
 
 .abt__welcome h1 {
   font-size: 700;
-  font-family: "Lora";
+  font-family: 'Lora';
   font-size: 64px;
   text-align: center;
   letter-spacing: 0.3%;
@@ -22,10 +23,23 @@
   height: 8px;
 }
 
-@media only screen and (max-width: 768px){
+.lefth_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .abt__welcome {
+    margin: 2rem auto;
+  }
 
   .abt__welcome h1 {
     font-size: 30px;
   }
-  
+
+  .lefth_btn {
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    justify-content: center;
+  }
 }

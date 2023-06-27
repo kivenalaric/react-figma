@@ -29,7 +29,9 @@ export default function AbtHeroSec() {
               </select>
             </div>
           </div>
-          <Button text="Book Now" color="#c7923c" />
+          <div className={AbtHeroCss.lefth_btn}>
+            <Button text="Book Now" color="#c7923c" />
+          </div>
         </div>
       </div>
       <div className={AbtHeroCss.abthero__right} />

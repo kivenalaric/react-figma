@@ -1,7 +1,8 @@
 .abthero__main {
   display: flex;
   width: 100vw;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem;
+  position: relative;
 }
 
 .abthero__left {
@@ -47,6 +48,12 @@
 .abt__select {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.abt__select p {
+  margin: 0;
 }
 
 select {
@@ -125,6 +132,10 @@ select {
     max-width: fit-content;
     max-height: fit-content;
     padding: 2px 5px;
+  }
+
+  .lefth_btn {
+    display: none;
   }
 
   .abthero__right {

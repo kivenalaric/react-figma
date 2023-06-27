@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  width: 96vw;
+  max-width: 1050px;
 }
 
 .abtbody__main {

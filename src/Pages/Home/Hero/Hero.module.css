@@ -5,14 +5,18 @@
   background-repeat: no-repeat;
   background-position: bottom;
   min-height: 400px;
-  padding: 130px 200px;
+  height: fit-content;
+  width: 100vw;
+  position: relative;
+  padding: 8rem 12rem;
   color: #fff;
+  overflow-x: hidden;
 }
 
 .hero_main2 {
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 12rem;
 }
 
 .hero_text {
@@ -57,5 +61,4 @@
     width: 100%;
     justify-content: space-between;
   }
-
 }

@@ -1,4 +1,14 @@
+.about__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0;
+  overflow: hidden;
+}
+
 .about__nav {
   z-index: 1;
-  position: relative;
 }

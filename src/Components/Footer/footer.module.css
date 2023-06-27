@@ -1,11 +1,13 @@
 .footer__main {
-  background: #304F47;
+  background: #304f47;
   flex-direction: column;
   color: #fff;
   justify-content: center;
   align-items: center;
-  padding: auto;
-  margin-bottom: 0;
+  margin-top: auto;
+  bottom: 0;
+  width: 100vw;
+  position: relative;
 }
 
 .footer__content {
@@ -13,7 +15,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0.3rem 6rem;
+  width: 96vw;
+  margin: auto;
 }
 
 .footer__left {
@@ -26,7 +30,7 @@
 }
 
 .footer__lefttext h3 {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-weight: 700px;
   font-size: 39px;
   letter-spacing: 0.5%;
@@ -41,7 +45,7 @@
 }
 
 .footer__leftp1 p {
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-weight: 400;
   margin: 0 auto 2%;
   font-size: 20px;
@@ -53,7 +57,7 @@
 }
 
 .footer__leftp2 p {
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-weight: 400;
   margin: 0 auto;
   font-size: 16px;
@@ -68,7 +72,7 @@
 }
 
 .form__lable {
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.5%;
@@ -123,9 +127,13 @@
 @media only screen and (max-width: 768px) {
   .footer__content {
     flex-direction: column;
-    gap: 3%;
+    gap: 2rem;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1.5rem;
+  }
+
+  .footer__left {
+    text-align: center;
   }
 
   .footer__leftp {
@@ -133,7 +141,7 @@
   }
 
   .footer__right {
-    margin: 2% auto 2%;
+    margin: auto;
   }
 
   .footer__righttop {
@@ -148,9 +156,8 @@
   }
 
   .footer__rightlinks {
-   align-items: center;
-   margin-left: -10%;
-   margin-right: auto;
+    align-items: center;
+    margin-left: -10%;
+    margin-right: auto;
   }
-
 }

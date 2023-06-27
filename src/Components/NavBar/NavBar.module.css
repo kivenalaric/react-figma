@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
+  width: 100vw;
+  position: relative;
   gap: 2%;
   padding: 0.2% 6%;
   margin: 0 auto;
   z-index: 1;
-  position: relative;
 }
 
 .navbar__right {
@@ -47,8 +47,6 @@
 
 @media only screen and (max-width: 768px) {
   .navbar__main {
-    width: 100vw;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
