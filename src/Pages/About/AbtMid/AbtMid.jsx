@@ -2,6 +2,7 @@ import image1 from '../../../assets/images/aboutcard1.png';
 
 const Abtimgs = [
   {
+    id: 1,
     image: image1,
     desc1:
       'At Africa Wizzy safari, we offer a wide range of tours and activities, including cultural and historical tours, wildlife safaris, mountain gorilla trekking, and more. Our experienced and knowledgeable guides will ensure that you have a safe and enjoyable experience while exploring the stunning landscapes and rich culture of Rwanda.',

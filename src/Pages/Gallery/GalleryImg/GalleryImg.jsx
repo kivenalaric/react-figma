@@ -5,10 +5,9 @@ import GalleryPics from './GalleryImg.module.css';
 export default function GallerPics() {
   return (
     <div className={GalleryPics.gpics__body}>
-      {GalleryImg.map((item, index) => {
+      {GalleryImg.map((item) => {
         return (
-          // eslint-disable-next-line react/no-array-index-key
-          <div className={GallerPics.gpics__image} key={index}>
+          <div className={GallerPics.gpics__image} key={item.id}>
             <img
               src={item.image}
               style={{ width: '100%' }}

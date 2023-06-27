@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import styled from '@emotion/styled';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';

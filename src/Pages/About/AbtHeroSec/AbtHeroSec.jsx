@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import Button from '../../../Components/Button/Button';
 import AbtHeroCss from './AbtHero.module.css';
@@ -12,25 +11,19 @@ export default function AbtHeroSec() {
         <div className={AbtHeroCss.abt__booking}>
           <div className={AbtHeroCss.abthero__dropdown}>
             <div className={AbtHeroCss.abt__select}>
-              <label htmlFor="guest" id="guest">
-                Guest
-              </label>
+              <p id="guest">Guest</p>
               <select>
                 <option htmlFor="guest">2 adults</option>
               </select>
             </div>
             <div className={AbtHeroCss.abt__select}>
-              <label htmlFor="date" id="date">
-                Date
-              </label>
+              <p id="date">Date</p>
               <select>
                 <option htmlFor>12 - 13 April 2021</option>
               </select>
             </div>
             <div className={AbtHeroCss.abt__select}>
-              <label htmlFor="pack" id="pack">
-                Package
-              </label>
+              <p id="pack">Package</p>
               <select>
                 <option htmlFor>Akagera Tour</option>
               </select>

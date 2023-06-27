@@ -6,10 +6,9 @@ export default function Carousell() {
   return (
     <div className={CarousellCss.carousell__main}>
       <div className={CarousellCss.carousell__sliderimg}>
-        {CarousellImg.map((data, index) => {
+        {CarousellImg.map((data) => {
           return (
-            // eslint-disable-next-line react/no-array-index-key
-            <div className={CarousellCss.carousell__slider} key={index}>
+            <div className={CarousellCss.carousell__slider} key={data.id}>
               <img src={data.scr} alt={data.title} />
               <div className={CarousellCss.carousell__slidertext}>
                 <h2>{data.title}</h2>

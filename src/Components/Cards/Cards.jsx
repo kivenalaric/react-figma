@@ -15,7 +15,7 @@ export default function Card() {
     <div className={CardCss2.card_main}>
       {CardS.map((data) => {
         return (
-          <div className={CardCss2.card_images} key={data.title}>
+          <div className={CardCss2.card_images} key={data.id}>
             <img src={data.image} alt={data.title} />
             <div className={CardCss2.cardText}>
               <h2>{data.title}</h2>

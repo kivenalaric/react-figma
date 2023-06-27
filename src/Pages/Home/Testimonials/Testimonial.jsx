@@ -7,7 +7,7 @@ export default function Testimonial() {
     <div className={TestimonialCss.Testimonial__main}>
       {TestimonialCards.map((data) => {
         return (
-          <div className={TestimonialCss.Testimonial__card}>
+          <div className={TestimonialCss.Testimonial__card} key={data.id}>
             <img src={data.src} alt={data.Name} />
             <div className={TestimonialCss.Testimonial__text}>
               <h2>{data.Name}</h2>
