@@ -26,7 +26,7 @@ export default function Bookings() {
             <i className="fa fa-angle-down" />
           </div>
         </div>
-        <div className={Booking.filter_texts}>
+        <div className={Booking.filter_texts_all}>
           <p>Package</p>
           <div className={Booking.filter_hard}>
             <h4>All</h4>

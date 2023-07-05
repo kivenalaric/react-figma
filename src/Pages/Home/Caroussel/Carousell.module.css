@@ -23,15 +23,27 @@
   .carousell__sliderimg {
     display: flex;
     flex-direction: column;
+    max-width: 90vw;
   }
 
   .carousell__main {
-    max-width: 95%;
+    max-width: 100%;
+  }
+
+  .carousell__slider {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .carousell__slider img {
     max-width: 80%;
-    align-items: center;
+    justify-self: center;
     margin: auto;
+  }
+
+  .carousell__slidertext {
+    text-align: center;
   }
 }

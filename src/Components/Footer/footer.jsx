@@ -5,88 +5,77 @@ import {
   FacebookIcon,
   InstagramIcon,
   LinkedInIcon,
+  MailIcon,
   TwitterIcon,
 } from '../Icons';
 
 function Footer() {
   return (
     <div className={FooterCss.footer__main}>
-      <div className={FooterCss.footer__content}>
-        <div className={FooterCss.footer__left}>
-          <div className={FooterCss.footer__lefttext}>
-            <h3>If you have any question, Let us help you!</h3>
-            <div className={FooterCss.footer__leftp}>
-              <div className={FooterCss.footer__leftp1}>
-                <p>
-                  If you have any questions or would like to book a tour with
-                  us, please dont hesitate to contact us.
-                </p>
-              </div>
-              <div className={FooterCss.footer__leftp2}>
-                <p>Phone: +250 788 123 456</p>
-                <p>Email: info@rwandatourism.com </p>
-                <p>Address: Kigali, Rwanda</p>
-              </div>
-              <form>
-                <p className={FooterCss.form__lable}>
-                  Subscribe to our newspaper
-                </p>
-                <div className={FooterCss.input__section}>
-                  <input
-                    className={FooterCss.footer__input}
-                    type="text"
-                    placeholder="Input your email here"
-                  />
-                  <button className={FooterCss.footer__sendbtn} type="button">
-                    <i className="fa fa-paper-plane" aria-hidden="true" />
-                  </button>
-                </div>
-              </form>
+      <div className={FooterCss.footer_maininner}>
+        <div className={FooterCss.footer_left}>
+          <h2>If you have any question, Let us help you!</h2>
+          <div className={FooterCss.footer_leftmid}>
+            <div className={FooterCss.footer_leftmid1}>
+              <p>
+                If you have any questions or would like to book a tour with us,
+                please dont hesitate to contact us.
+              </p>
+            </div>
+            <div className={FooterCss.footer_leftmid1}>
+              <p>Phone: +250 788 123 456</p>
+              <p>Email: info@rwandatourism.com </p>
+              <p>Address: Kigali, Rwanda</p>
             </div>
           </div>
+          <p className={FooterCss.footer_subscribe}>
+            Subscribe to our newspaper
+          </p>
+          <div className={FooterCss.footer_input}>
+            <input type="text" placeholder="Input Your Email Here" />
+            <button type="button">
+              <MailIcon />
+            </button>
+          </div>
         </div>
-        <div className={FooterCss.footer__right}>
-          <div className={FooterCss.footer__righttop}>
-            <div className={FooterCss.footer__rightlogo}>
-              <img src={logo} alt="logo" />
-            </div>
-            <div className={FooterCss.footer__sociallinks}>
+        <div className={FooterCss.footer_right}>
+          <div className={FooterCss.footer_righttop}>
+            <img src={logo} alt="logo" />
+            <div className={FooterCss.footer_icons}>
               <FacebookIcon />
               <TwitterIcon />
               <LinkedInIcon />
               <InstagramIcon />
             </div>
           </div>
-          <div className={FooterCss.footer__righttext}>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-          <div className={FooterCss.footer__rightlinks}>
-            <ul>
-              <li>Home</li>
-              <li>Testimonials</li>
-              <li>Destinations</li>
-              <li>Sign In</li>
-            </ul>
-            <ul>
-              <li>About Us</li>
-              <li>Packages</li>
-              <li>Events</li>
-              <li>Gallery</li>
-            </ul>
-            <ul>
-              <li>Our Team</li>
-              <li>Blog</li>
-              <li>Contact Us</li>
-            </ul>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div className={FooterCss.footer_rightbot}>
+            <div className={FooterCss.footer_list}>
+              <p>Home</p>
+              <p>Testimonials</p>
+              <p>Destinations</p>
+              <p>signinn</p>
+            </div>
+            <div className={FooterCss.footer_list}>
+              <p>About Us</p>
+              <p>Packages</p>
+              <p>Events</p>
+              <p>Gallery</p>
+            </div>
+            <div className={FooterCss.footer_list}>
+              <p>Our Team</p>
+              <p>Blog</p>
+              <p>Contact Us</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className={FooterCss.footer__bottomtxt}>
-        <p>Copyright Africa Wizzy Safari 2022</p>
-      </div>
+      <p className={FooterCss.footer_copyright}>
+        Copyright Africa Wizzy Safari 2022
+      </p>
     </div>
   );
 }

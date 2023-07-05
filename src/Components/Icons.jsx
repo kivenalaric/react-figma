@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { MdMenu, MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { RiSendPlane2Fill } from 'react-icons/ri';
 import { IoClose } from 'react-icons/io5';
 
 export const FacebookIcon = styled(FaFacebookF)`
@@ -14,6 +15,11 @@ export const FacebookIcon = styled(FaFacebookF)`
 
 export const ArrowDown = styled(MdOutlineKeyboardArrowDown)`
   color: #c7923e;
+  font-size: 1.5rem;
+`;
+
+export const MailIcon = styled(RiSendPlane2Fill)`
+  color: #fff;
   font-size: 1.5rem;
 `;
 

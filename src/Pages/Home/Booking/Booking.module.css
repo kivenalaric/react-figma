@@ -43,13 +43,15 @@
   justify-content: space-between;
 }
 
-.filter_texts {
+.filter_texts,
+.filter_texts_all {
   display: flex;
   flex-direction: column;
   gap: 0px;
 }
 
-.filter_texts p {
+.filter_texts p,
+.filter_texts_all p {
   font-size: 12px;
   letter-spacing: 0.8%;
   color: #bfbebeb6;
@@ -78,13 +80,14 @@
 
 @media only screen and (max-width: 768px) {
   .booking_main {
-    /* max-width: 80%;
-    display: flex;
-    flex-direction: column;
+    max-width: 96%;
     margin: auto;
     justify-content: center;
-    gap: 10px; */
-    /* padding: 2px 5px; */
+    gap: 10px;
+    padding: 1% 2%;
+  }
+
+  .filter_texts_all {
     display: none;
   }
 
@@ -100,12 +103,17 @@
     gap: 3px;
   }
 
+  .filter_hard h4,
+  .filter_hard i {
+    margin: 0;
+  }
+
   .filter_hard h4 {
     font-size: 12px;
   }
 
   .filter_btn {
-    max-width: 30px;
+    max-width: 50px;
   }
 
   .filter_btn button {
