@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { MdMenu, MdOutlineKeyboardArrowDown } from 'react-icons/md';
-import { RiSendPlane2Fill } from 'react-icons/ri';
+import { RiSendPlane2Fill, RiInstagramFill } from 'react-icons/ri';
 import { IoClose } from 'react-icons/io5';
 
 export const FacebookIcon = styled(FaFacebookF)`
@@ -49,7 +48,7 @@ export const LinkedInIcon = styled(FaLinkedinIn)`
   cursor: pointer;
 `;
 
-export const InstagramIcon = styled(AiFillInstagram)`
+export const InstagramIcon = styled(RiInstagramFill)`
   border: #fff 2px solid;
   padding: 0.5rem;
   border-radius: 50%;
