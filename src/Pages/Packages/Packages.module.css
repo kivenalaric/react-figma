@@ -1,0 +1,53 @@
+.package_main {
+  min-height: 100vh;
+  height: fit-content;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+.pack__card {
+  gap: 10px;
+}
+
+.pack__btn {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 0.2% 10%;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.pack__btn button {
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+.pack__btn1 {
+  color: #c7923e;
+  background-color: #fff;
+  border: 1px solid #c7923e;
+}
+
+.pack__btn2 {
+  color: #fff;
+  background-color: #c7923e;
+  border: 1px solid #c7923e;
+}
+
+.pack__btn button:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .pack__btn {
+    display: none;
+  }
+}

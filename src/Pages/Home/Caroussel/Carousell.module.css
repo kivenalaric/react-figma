@@ -1,0 +1,49 @@
+.carousell__main {
+  display: flex;
+  margin: auto;
+  width: 96vw;
+  max-width: 1200px;
+}
+
+.carousell__sliderimg {
+  display: flex;
+  max-width: 60%;
+  flex-direction: row;
+  margin: 0px auto;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.carousell__slider {
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousell__sliderimg {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+  }
+
+  .carousell__main {
+    max-width: 100%;
+  }
+
+  .carousell__slider {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousell__slider img {
+    max-width: 80%;
+    justify-self: center;
+    margin: auto;
+  }
+
+  .carousell__slidertext {
+    text-align: center;
+  }
+}

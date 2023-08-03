@@ -1,0 +1,135 @@
+.footer__main {
+  background-color: #304f47;
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 3rem 0.7rem 8rem;
+  color: #fff;
+}
+
+.footer_maininner {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer_left {
+  width: 96vw;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer_input {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer_input input {
+  width: 80%;
+  padding: 0.8rem 0.3rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.footer_input button {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  background-color: #c7923e;
+  border: none;
+}
+
+.footer_right {
+  width: 96vw;
+  max-width: 460px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_left h2 {
+  font-size: 2rem;
+}
+
+.footer_righttop {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.footer_rightbot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_copyright {
+  justify-self: center;
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__main {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .footer_maininner {
+    flex-direction: column;
+    margin: auto;
+    width: 96vw;
+  }
+
+  .footer_right {
+    margin: auto;
+  }
+
+  .footer_left {
+    margin: auto;
+  }
+
+  .footer_input {
+    width: 96vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer_input input {
+    width: 80%;
+    padding: 0.5rem 0.2rem;
+  }
+
+  .footer_input button {
+    padding: 0.2rem;
+  }
+
+  .footer_left h2 {
+    font-size: 1.7rem;
+  }
+
+  .footer_leftmid1 p {
+    max-width: 300px;
+    text-align: left;
+  }
+
+  .footer_righttop {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .footer_rightbot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.2rem;
+  }
+}

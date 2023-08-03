@@ -1,0 +1,49 @@
+.main_home {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hr__lines {
+  display: flex;
+  max-width: 200px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 5%;
+}
+
+.hr__lines .color1__line {
+  color: #c7923e;
+  background-color: #c7923e;
+  width: 50px;
+  height: 10px;
+}
+
+.hr__lines .color2__line {
+  background-color: #304f47;
+  color: #304f47;
+  width: 50px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hr__lines {
+    max-width: 40%;
+    gap: 5px;
+  }
+
+  .hr__lines .color1__line {
+    width: 25px;
+    height: 5px;
+  }
+
+  .hr__lines .color2__line {
+    width: 25px;
+    height: 5px;
+  }
+}

@@ -1,0 +1,87 @@
+.concard__main {
+  display: flex;
+  gap: 1.5rem;
+  width: 96vw;
+  max-width: 920px;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.concard__cards {
+  max-width: fit-content;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #304f47;
+  border-radius: 5%;
+  gap: 1rem;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  height: fit-content;
+  min-height: 120px;
+  background-color: #fff;
+  justify-content: center;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 2px 4px;
+}
+
+.concard__cards h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.concard__social i {
+  border-radius: 50%;
+  border: 2px solid #304f47;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.concard__cards h3 {
+  font-size: 24px;
+  font-family: 'Lora';
+  font-weight: 700;
+  letter-spacing: 0.5%;
+  color: #000;
+}
+
+.concard__social {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.concard__contact,
+.concard__addtext {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+
+.concard__addtext p {
+  margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .concard__main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5px;
+  }
+
+  .concard__cards {
+    align-items: center;
+    text-align: center;
+  }
+
+  .concard__cards h3 {
+    text-align: center;
+  }
+}

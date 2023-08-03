@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+.contactform__main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactform__main .contactform__form {
+  display: flex;
+  flex-direction: column;
+  width: 96vw;
+  max-width: 850px;
+  gap: 20px;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 3rem 4rem;
+  margin: 6rem auto;
+}
+
+.contactform__mgs,
+.contactform__nums,
+.contactform__email,
+.contactform__names {
+  width: 90vw;
+  max-width: 730px;
+  margin: auto;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.contactform__form label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contactform__form input,
+.contactform__form textarea {
+  border: 0.5px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  width: 100%;
+}
+
+.contactform__names {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.contactform__fname input,
+.contactform__lname input {
+  width: 90vw;
+  max-width: 355px;
+  padding: 0.8rem 1rem;
+}
+
+.contactform__email input {
+  width: 100%;
+}
+
+.contactform__selectnum {
+  display: flex;
+  width: 100%;
+}
+
+.contactform__selectnum select {
+  font-size: 16px;
+  background-color: #e1e1e1;
+  border-radius: 8px 0 0 8px;
+}
+
+.contactform__selectnum input {
+  border-radius: 0px 8px 8px 0px;
+  flex: 2;
+}
+
+.contactform__msg {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: 1px solid #e1e1e1;
+  width: 100%;
+}
+
+@media only screen and (max-width: 786px) {
+  .contactform__main {
+    width: 100vw;
+    margin: auto;
+  }
+
+  .contactform__main .contactform__form {
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 96vw;
+  }
+
+  .contactform__names {
+    flex-direction: column;
+    width: 97vw;
+    align-items: center;
+    margin: auto;
+    justify-self: center;
+  }
+
+  .contactform__btn {
+    width: 90vw;
+  }
+}

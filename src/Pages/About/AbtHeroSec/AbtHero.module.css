@@ -1,0 +1,144 @@
+.abthero__main {
+  display: flex;
+  width: 100vw;
+  margin: 0 0 3rem;
+  position: relative;
+}
+
+.abthero__left {
+  padding: 0px 7rem;
+  width: 60%;
+  max-width: 900px;
+  overflow-x: hidden;
+}
+
+.abthero__left h1 {
+  font-size: 60px;
+  max-width: 600px;
+  font-family: 'lora';
+}
+
+.abthero__left p {
+  font-family: 'mulish';
+  margin-bottom: 100px;
+}
+
+.abt__booking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  z-index: 1;
+  max-width: 850px;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.abthero__dropdown {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.abt__select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.abt__select p {
+  margin: 0;
+}
+
+select {
+  border: none;
+  font-family: 'Mulish';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+  text-align: right;
+}
+
+.abthero__right {
+  background-image: url('../../../assets/images/aboutusImg.png');
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  max-width: 600px;
+  max-height: 750px;
+  width: 40%;
+  flex: 1;
+  align-content: flex-end;
+  transform: translateY(-16%);
+  position: absolute;
+  right: 0;
+}
+
+.abthero__btn {
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .abthero__main {
+    background-image: linear-gradient(
+        to bottom,
+        #0f201cb3,
+        #0f201cb3,
+        #0f201cb3
+      ),
+      url('../../../assets/images/aboutusImg.png');
+    background-size: cover;
+  }
+
+  .abthero__left {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .abthero__left h1 {
+    max-width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 60%;
+  }
+
+  .abthero__empty {
+    display: none;
+  }
+
+  .abthero__dropdown {
+    /* max-width: 70%;
+    margin: auto;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 5px; */
+    display: none;
+  }
+
+  .abthero__dropdown button {
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 2px 5px;
+  }
+
+  .lefth_btn {
+    display: none;
+  }
+
+  .abthero__right {
+    display: none;
+  }
+}
